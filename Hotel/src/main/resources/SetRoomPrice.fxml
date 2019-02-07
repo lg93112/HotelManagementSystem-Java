@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="414.0" prefWidth="493.0" styleClass="bodybg" stylesheets="@setprice.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManagerRoomPrice.SetRoomPriceController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="414.0" prefWidth="156.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Single" translateX="90.0" translateY="100.0" wrappingWidth="58.2060546875">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double" translateX="90.0" translateY="180.0" wrappingWidth="58.2060546875">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Suite" translateX="90.0" translateY="255.0" wrappingWidth="58.2060546875">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children></VBox>
+         </left>
+         <right>
+            <VBox prefHeight="414.0" prefWidth="140.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="single_button" mnemonicParsing="false" onAction="#change_single" text="Change" translateY="100.0" />
+                  <Button fx:id="double_button" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#change_double" text="Change" translateY="170.0" />
+                  <Button fx:id="suite_button" layoutX="10.0" layoutY="37.0" mnemonicParsing="false" onAction="#change_suite" text="Change" translateY="240.0" />
+               </children></VBox>
+         </right>
+         <center>
+            <VBox prefHeight="413.0" prefWidth="148.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField fx:id="single_price" translateY="100.0">
+                     <VBox.margin>
+                        <Insets left="40.0" right="40.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="double_price" layoutX="40.0" layoutY="10.0" translateY="170.0">
+                     <VBox.margin>
+                        <Insets left="40.0" right="40.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="suite_price" layoutX="40.0" layoutY="37.0" translateY="240.0">
+                     <VBox.margin>
+                        <Insets left="40.0" right="40.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

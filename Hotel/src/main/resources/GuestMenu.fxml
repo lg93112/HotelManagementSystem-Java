@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="413.0" prefWidth="431.0" styleClass="bodybg" stylesheets="@GuestMenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Guest.GuestMenuController">
+   <children>
+      <JFXButton fx:id="guest_menu_checkin" layoutX="119.0" layoutY="42.0" onAction="#check_in_page" prefHeight="79.0" prefWidth="193.0" text="Check-In">
+         <stylesheets>
+            <URL value="@/checkin.css" />
+            <URL value="@/logIn.css" />
+         </stylesheets></JFXButton>
+      <JFXButton fx:id="guest_menu_checkout" layoutX="119.0" layoutY="161.0" onAction="#check_out_page" prefHeight="79.0" prefWidth="193.0" text="Check-Out">
+         <stylesheets>
+            <URL value="@/checkin.css" />
+            <URL value="@/logIn.css" />
+         </stylesheets></JFXButton>
+      <JFXButton fx:id="guest_menu_roomserv" layoutX="119.0" layoutY="284.0" onAction="#room_service_page" prefHeight="79.0" prefWidth="193.0" text="Room Service">
+         <stylesheets>
+            <URL value="@/checkin.css" />
+            <URL value="@/logIn.css" />
+         </stylesheets></JFXButton>
+   </children>
+</AnchorPane>

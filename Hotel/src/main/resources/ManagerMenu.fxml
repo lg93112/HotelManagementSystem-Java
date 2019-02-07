@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="413.0" prefWidth="431.0" styleClass="bodybg" stylesheets="@ManagerMenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Manager.ManagerMenuController">
+    <children>
+        <JFXButton fx:id="manager_menu_room_price" layoutX="119.0" layoutY="42.0" onAction="#set_room_price" prefHeight="79.0" prefWidth="193.0" text="Room Price" translateY="30.0">
+            <stylesheets>
+                <URL value="@/checkin.css" />
+                <URL value="@/logIn.css" />
+            </stylesheets></JFXButton>
+        <JFXButton fx:id="manager_menu_revenue" layoutX="119.0" layoutY="161.0" onAction="#show_revenue" prefHeight="79.0" prefWidth="193.0" text="Hotel Revenue" translateY="100.0">
+            <stylesheets>
+                <URL value="@/checkin.css" />
+                <URL value="@/logIn.css" />
+            </stylesheets></JFXButton>
+    </children>
+</AnchorPane>

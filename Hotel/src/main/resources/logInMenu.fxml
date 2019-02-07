@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="464.0" prefWidth="529.0" styleClass="bodybg" stylesheets="@logIn.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LogIn.logInMenuController">
+   <children>
+      <JFXButton fx:id="main_front_desk" contentDisplay="TOP" layoutX="51.0" layoutY="280.0" onAction="#front_desk_menu" prefHeight="95.0" prefWidth="164.0" stylesheets="@logIn.css" text="Front Desk">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/front_desk.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <JFXButton fx:id="main_manager" contentDisplay="TOP" layoutX="317.0" layoutY="280.0" onAction="#manager_menu" prefHeight="95.0" prefWidth="164.0" stylesheets="@logIn.css" text="Manager">
+         <graphic>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Image/manager.png" />
+               </image>
+            </ImageView>
+         </graphic></JFXButton>
+      <Text fontSmoothingType="LCD" layoutX="116.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Jigsaw Hotel Management System" textAlignment="CENTER" wrappingWidth="297.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#fff6f6" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+   </children>
+</AnchorPane>

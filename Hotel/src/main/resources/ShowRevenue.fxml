@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="335.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ManagerRevenue.ShowRevenueController">
+   <children>
+      <BorderPane prefHeight="358.0" prefWidth="367.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="358.0" prefWidth="189.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Year" translateX="100.0" translateY="60.0" wrappingWidth="77.21875">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month" translateX="100.0" translateY="120.0" wrappingWidth="77.21875">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="10.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Revenue" translateX="100.0" translateY="180.0" wrappingWidth="77.21875">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox prefHeight="358.0" prefWidth="178.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ComboBox fx:id="year" prefWidth="150.0" translateY="55.0">
+                     <VBox.margin>
+                        <Insets right="80.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <ComboBox fx:id="month" layoutX="10.0" layoutY="10.0" prefWidth="150.0" translateY="110.0">
+                     <VBox.margin>
+                        <Insets right="80.0" />
+                     </VBox.margin>
+                  </ComboBox>
+                  <TextField fx:id="revenue" editable="false" translateY="165.0">
+                     <VBox.margin>
+                        <Insets right="80.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </right>
+         <bottom>
+            <HBox prefHeight="44.0" prefWidth="367.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="revenue_ok" onAction="#show_revenue" prefHeight="44.0" prefWidth="200.0" text="OK" />
+                  <JFXButton fx:id="show_revenue_reset" layoutX="10.0" layoutY="10.0" onAction="#reset_all" prefHeight="44.0" prefWidth="197.0" text="Reset" />
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="321.0" prefWidth="351.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CheckOut.deleteGuestController">
+   <children>
+      <VBox id="CheckOutGuestName" prefHeight="321.0" prefWidth="351.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="check_out_guest_name" labelFloat="true" promptText="Guest Name">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="50.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="check_out_room_number" labelFloat="true" layoutX="20.0" layoutY="30.0" promptText="Room Number">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="50.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <HBox prefHeight="65.0" prefWidth="324.0">
+               <children>
+                  <JFXButton fx:id="check_out" onAction="#CheckOutGuest" prefHeight="65.0" prefWidth="236.0" stylesheets="@checkin.css" text="CheckOut" />
+                  <JFXButton fx:id="check_out_cancel" layoutX="10.0" layoutY="10.0" onAction="#CheckOutCancel" prefHeight="65.0" prefWidth="241.0" stylesheets="@checkin.css" text="Cancel" />
+               </children>
+               <VBox.margin>
+                  <Insets top="70.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
